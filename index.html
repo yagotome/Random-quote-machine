@@ -7,16 +7,32 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>		
 	    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
-	<body>
-		<section class="container-fluid">
-			<article>
-				<div id="quote"></div>
-				<a href="https://twitter.com/" class="btn btn-default">
+	<body>		
+		<div id="main" class="container-fluid">
+			<div class="center">
+				<h1 class="row-centered">Random quote machine</h1>
+			</div>
+			<article class="center">
+				<div id="quote" class="row-centered">
+					<h3>“<div class="inline" id="quote-text"></div>”</h3>
+					<h4>– <div class="inline" id="quote-author"></div></h4>
+				</div>
+				<a id="btnTweet" href="https://twitter.com/" alt="Teste" class="btn btn-default" target="_blank">
 					<i class="fa fa-twitter"></i>
 				</a>
-				<button type="button" class="btn btn-default">New quote</button>
+				<div class="toRight">
+					<button id="btnNew" type="button" class="btn btn-default">New quote</button>
+				</div>
 			</article>
-		</section>
+			<div class="center">
+				<footer>
+					<h5 class="row-centered">by <a href="https://br.linkedin.com/in/yago-tomé-27b783102" class="nounderline" targer="_blank">Yago Tomé</a></h5>
+				</footer>
+			</div>
+		</div>
 	</body>
 </html>
