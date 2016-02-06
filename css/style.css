@@ -1,0 +1,11 @@
+section {
+	/*background-color: rgb(0, 0, 0);*/
+}
+
+article {
+	border-radius: 6px;
+}
+
+.row-centred {
+	text-align: center;
+}
