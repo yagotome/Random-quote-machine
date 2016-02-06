@@ -30,11 +30,17 @@ $(function() {
 		return a + Math.floor(Math.random()*(b-a+1));
 	}
 
-	$("#btnNew").click(function() {
+	function newQuote() {
 		var i = randInt(0, quotes.length - 1);
 		$("#quote-phrase").text(quotes[i].phrase);
 		$("#quote-author").text(quotes[i].author);
-	});
+		$("#btnTweet").attr("href", "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=“"
+			+ quotes[i].phrase + "” – "+ quotes[i].author);
+	}
+
+	$("#btnNew").click(newQuote);
+
+	newQuote();
 
 });
 
